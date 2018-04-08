@@ -1,64 +1,226 @@
-.planthand {
-  object-fit: cover;
-  width: 100%;
-  height: 1000px;
-}
-
-/* Container holding the image and the text */
-.container {
-    position: centered;
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
     text-align: center;
+    text-decoration: none;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
     color: white;
-    font-family: "Abel";
-    font-weight: bold;
-    font-size: 75px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 30px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    float:right;
+}
+/* instagram */
+.fa-instagram {
+    background: #125688;
+    color: white;
+    padding: 10px;
+    width: 15px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    float:right;
+  }
+
+
+.contactpage {
+  /*text styling*/
+font-family: 'Abel', sans-serif;
+font-size: 14px;
+padding-left: 12px;
+color:  #2F9E1B;
+
+}
+.contactpage:hover {
+   background-color: white;
+   color: red;
+}
+
+.popup:hover {
+  background-color: white;
+  color: red;
+}
+
+h1 {
+  /*text styling*/
+    color: black;
+    text-align: left;
+    font-family: 'Abel', sans-serif;
+    font-weight: lighter;
+    font-size: 30px;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+h2 {
+  /*text styling*/
+    color: black;
+    text-align: left;
+    font-family: 'Abel', sans-serif;
+    font-style: italic;
+    font-weight: lighter;
+    font-size: 20px;
+    padding-left: 70px;
+}
+
+p {
+  /*text styling*/
+font-family: 'Abel', sans-serif;
+font-size: 20px;
+font-weight:lighter;
+}
+
+.logo{
+  /*image alignment*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+}
+
+.chicken {
+  /*image alignment*/
+    float: left;
+    margin: 0 20px 0px 90px;
+    border-radius: 20%;
+  }
+
+/*image styling*/
+
+.environment {
+  /*text alignment*/
+    padding-right: 90px;
+    text-align: justify;
+}
+
+.farmer {
+  /*image alignment*/
+    float: right;
+    margin: 0 20px 20px 0;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 50px;
+    padding-left: 0px;
+    margin-left: 20px;
+    border-radius: 20%;
+}
+
+.middletext {
+padding-top: 90px;
+}
+
+.costsavings {
+  /*text alignment*/
+    text-align: justify;
+    padding-right: 15px;
+    padding-left: 70px
+}
+
+.plant {
+  /*image alignment*/
+    float: left;
+    margin: 20px 40px 40px 70px;
+    border-radius: 20%;
+}
+
+.lasttext {padding-top: 90px;}
+
+/*text alignment*/
+.howdoesitwork {
+  text-align: justify;
+  padding-right: 70px;
+  padding-left: 15px
+}
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-top: 0px;
+    top:10px;
+    font-family: "Abel", sans-serif;
+    color:#2F9E1B ;
+    font-size: 14px;
+    text-decoration: underline;
+
 
 }
 
-.centered {
-  text-shadow: 2px 2px black;
-  color: white;
-  text-decoration: none;
-}
-
-/* Bottom left text */
-.bottom-left {
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 160px;
+    background-color: red;
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding:5px ;
     position: absolute;
-    bottom: 8px;
-    left: 16px;
-    color: transparent
-}
-
-/* Top left text */
-.top-left {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-    color: transparent;
-    width: 10%;
-    height: 10%;
-}
-
-/* Top right text */
-.top-right {
-    position: absolute;
-    top: 8px;
-    right: 16px;
-    color: transparent
-}
-
-/* Bottom right text */
-.bottom-right {
-    position: absolute;
-    bottom: 8px;
-    right: 16px;
-    color: transparent
-}
-
-/* Centered text */
-.centered {
-    position: absolute;
-    top: 50%;
+    z-index: 1;
+    bottom: 125%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext:after {
+    content:
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color:white;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.copyright {
+  font-family: "Abel", sans-serif;
+  color:#2F9E1B ;
+  font-size: 12px;
+  justify: centered
+}
+
+
+.bottom {
+  font-family: "Abel", sans-serif;
+  color:#2F9E1B ;
+  font-size: 12px;
+  background-color:white;
+  height: 100px;
+  justify-content: center;
+
 }
